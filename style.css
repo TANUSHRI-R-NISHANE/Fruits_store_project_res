@@ -4,11 +4,9 @@
     box-sizing:border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body{
     background: rgb(255, 250, 240);
     color:rgb(51, 51, 51);
-
 }
 
 /* Navbar */
@@ -27,7 +25,6 @@ body{
 }
 
 /* Hero */
-
 .hero{
     width:100%;
     height:90vh;
@@ -54,7 +51,6 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
-
 .hero-text h1{
     font-size:30px;
     /* margin-bottom:20px; */
@@ -77,7 +73,6 @@ body{
 }
 
 /* Features */
-
 .features{
     width:90%;
     margin:70px auto;
@@ -218,11 +213,11 @@ footer{
     background: linear-gradient(90deg, rgb(68, 139, 84), rgb(80, 130, 101));
     color:rgb(255, 255, 255);
     text-align:center;
-    padding: 20px;
+    padding:20px;
 }
 .about-section{
     width:90%;
-    margin:60px 0;
+    margin:60px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -253,10 +248,10 @@ footer{
 .about-section{
     flex-direction:column;
     text-align:center;
+    margin: 18px;
+   
 }
-
 }
-
 
 /* Fruits Page */
 
@@ -317,11 +312,13 @@ footer{
 .gallery-section{
     width:90%;
     margin:60px auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap:20px;
 }
 .gallery-item{
+    width: 250px;
     overflow:hidden;
     border-radius:10px;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
@@ -331,12 +328,13 @@ footer{
     width:100%;
     height:250px;
     transition:.4s;
+    display: block;
+    object-fit: cover;
 }
 .gallery-item:hover img{
     transform:scale(1.08);
 }
-
-
+ 
 /* Contact Page */
 
 .contact-section{
