@@ -16,7 +16,7 @@ body{
     background: linear-gradient(90deg,  rgb(254, 180, 123), rgb(255, 126, 95)) !important;
  }
 .navbar-brand{
-    font-size:28px;
+    font-size: 22px;
 }
 .nav-link{
     margin-left:15px;
@@ -56,19 +56,19 @@ body{
 }
 
 .hero-text h1{
-    font-size:55px;
-    margin-bottom:20px;
+    font-size:30px;
+    /* margin-bottom:20px; */
 }
 .hero-text p{
-    font-size:20px;
-    margin-bottom:30px;
+    font-size:15px;
+    /* margin-bottom:30px; */
 }
 .hero-btn{
     display:inline-block;
     text-decoration:none;
     background: linear-gradient(90deg, rgb(255, 126, 95), rgb(254, 180, 123));
     color:rgb(255, 255, 255);
-    padding:12px 30px;
+    padding: 10px 22px;
     border-radius:30px;
     transition:.3s;
 }
@@ -92,6 +92,8 @@ body{
     justify-content:space-between;
     gap:25px;
     flex-wrap:wrap;
+    align-items: center;
+    flex-direction:column;
 }
 .feature{
     flex:1;
@@ -122,6 +124,8 @@ body{
     justify-content:center;
     gap:30px;
     flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
 }
 .fruit-card{
     width:300px;
@@ -173,49 +177,38 @@ footer{
 }
 
 
-@media(max-width:768px){
-
-.hero{
-    height:70vh;
-}
-
+@media(min-width:768px){
 .hero-text h1{
     font-size:38px;
 }
-
 .hero-text p{
     font-size:17px;
 }
-
 .feature-box{
-    flex-direction:column;
+    flex-direction:row;
 }
-
 .fruit-container{
-    flex-direction:column;
+    flex-direction:row;
     align-items:center;
 }
-
 }
 
-@media(max-width:480px){
+@media(min-width:1024px){
 
 .hero-text h1{
-    font-size:30px;
+    font-size:55px;
+    margin-bottom: 20px;
 }
-
 .hero-text p{
-    font-size:15px;
+    font-size:20px;
+    margin-bottom: 30px;
 }
-
 .hero-btn{
-    padding:10px 22px;
+    padding:12px 30px;
 }
-
 .navbar-brand{
-    font-size:22px;
+    font-size:28px;
 }
-
 }
 
 
